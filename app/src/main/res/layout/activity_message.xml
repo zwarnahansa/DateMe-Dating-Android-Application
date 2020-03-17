@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Message">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/nav_panel">
+
+        <LinearLayout
+            android:id="@+id/navBtnGroup"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/profileBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:clickable="true"
+                android:background="@drawable/circle_btn_gray"/>
+
+            <Button
+                android:id="@+id/profileBtnIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-35dp"
+                android:clickable="true"
+                android:background="@drawable/ic_user_ash"/>
+
+            <Button
+                android:id="@+id/mainBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:clickable="true"
+                android:background="@drawable/circle_btn_gray"/>
+
+            <Button
+                android:id="@+id/mainBtnIcon"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="-32dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:background="@drawable/ic_heard_hand_ash" />
+
+            <Button
+                android:id="@+id/msgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:clickable="true"
+                android:background="@drawable/circle_btn_gray"/>
+
+            <Button
+                android:id="@+id/msgBtnIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="-38dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:background="@drawable/ic_chat_rose" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

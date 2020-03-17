@@ -16,15 +16,35 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Feed extends AppCompatActivity {
+public class Main extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feed);
+        setContentView(R.layout.activity_main);
 
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         Log.d("tag", "onCreate : " + firebaseAuth.getCurrentUser().getEmail() + " " + firebaseAuth.getCurrentUser().getDisplayName());
+
+        Button profileButton = (Button) findViewById(R.id.profileBtnIcon);
+
+        Button msgButton = (Button) findViewById(R.id.msgBtnIcon);
+
+        profileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent profIntent = new Intent(Main.this, ProfileView.class);
+                startActivity(profIntent);
+            }
+        });
+
+        msgButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent msgIntent = new Intent(Main.this, Message.class);
+                startActivity(msgIntent);
+            }
+        });
     }
 
     public void logOut(final View view) {
@@ -38,7 +58,7 @@ public class Feed extends AppCompatActivity {
                     }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(Feed.this, "Sign Out Fail", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Main.this, "Sign Out Fail", Toast.LENGTH_SHORT).show();
                 }
             });
     }

@@ -123,21 +123,21 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="40dp" />
 
+
             <Button
                 android:id="@+id/googleSinInBtn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_below="@+id/loginBtn"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/login_btn_bg"
+                android:clickable="true"
+                android:fontFamily="sans-serif-black"
                 android:text="Sign up with"
                 android:textAllCaps="true"
-                android:background="@drawable/login_btn_bg"
-                android:fontFamily="sans-serif-black"
-                android:textColor="#ef435b"
-                android:clickable="true"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginTop="20dp" />
-
+                android:textColor="#ef435b" />
 
             <TextView
                 android:id="@+id/signUptext"

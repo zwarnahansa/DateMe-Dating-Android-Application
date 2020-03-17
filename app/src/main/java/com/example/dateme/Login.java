@@ -63,7 +63,7 @@ public class Login extends AppCompatActivity {
 
         GoogleSignInAccount signInAccount = GoogleSignIn.getLastSignedInAccount(this);
         if (signInAccount != null || firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(this, Feed.class));
+            startActivity(new Intent(this, Main.class));
         }
         signButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,7 +105,7 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Toast.makeText(getApplicationContext(), "Your account is connected to the Application", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getApplicationContext(), Feed.class));
+                        startActivity(new Intent(getApplicationContext(), Main.class));
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "870535404318",
+    "firebase_url": "https://dateme-c4913.firebaseio.com",
+    "project_id": "dateme-c4913",
+    "storage_bucket": "dateme-c4913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870535404318:android:de8af0f141270bf15ac70f",
+        "android_client_info": {
+          "package_name": "com.example.dateme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870535404318-fslg8lost93053ptcihh1anribjm3pdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASLnXYOurgcnL6a8FcRTs0vuSIrBbPuwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870535404318-fslg8lost93053ptcihh1anribjm3pdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

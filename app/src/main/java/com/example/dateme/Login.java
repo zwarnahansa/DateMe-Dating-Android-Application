@@ -20,11 +20,20 @@ public class Login extends AppCompatActivity {
         dateMetext.setText(Html.fromHtml(text));
 
         TextView signUpText = (TextView) findViewById(R.id.signUplink);
+        TextView forgotPass = (TextView) findViewById(R.id.fogotPass);
 
         signUpText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Login.this, Register.class);
+                startActivity(intent);
+            }
+        });
+
+        forgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, ForgotPassword.class);
                 startActivity(intent);
             }
         });

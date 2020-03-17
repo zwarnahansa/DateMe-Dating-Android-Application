@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/grad_bg"
-    tools:context=".Login">
+    tools:context=".Register">
 
     <RelativeLayout
         android:id="@+id/loginHeader"
@@ -18,7 +18,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:adjustViewBounds="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:layout_centerHorizontal="true"
             android:scaleType="fitCenter"
             android:src="@drawable/heart" />
@@ -173,17 +173,44 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="40dp" />
 
+            <Button
+                android:id="@+id/googleBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/signInBtn"
+                android:text="Sign Up With "
+                android:textAllCaps="true"
+                android:background="@drawable/login_btn_bg"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#ef435b"
+                android:clickable="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp" />
+
+
+            <ImageView
+                android:id="@+id/gooleDrawable"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/signInBtn"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/google_logo"/>
 
             <TextView
                 android:id="@+id/signUptext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/signInBtn"
+                android:layout_below="@+id/googleBtn"
                 android:text="Already a Member ?"
                 android:textSize="15dp"
                 android:layout_alignParentLeft= "true"
                 android:layout_marginLeft="95dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:textColor="@color/white"
                 android:fontFamily="sans-serif-medium"/>
 
@@ -191,14 +218,14 @@
                 android:id="@+id/logInLink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/signInBtn"
+                android:layout_below="@+id/googleBtn"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="95dp"
                 android:clickable="true"
                 android:linksClickable="true"
                 android:fontFamily="sans-serif-black"
-                android:text="Log In Now"
+                android:text="Log In"
                 android:textColor="@color/white"
                 android:textSize="15dp" />
 

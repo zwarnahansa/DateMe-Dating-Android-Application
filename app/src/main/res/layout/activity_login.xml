@@ -123,17 +123,32 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="40dp" />
 
+            <Button
+                android:id="@+id/googleSinInBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/loginBtn"
+                android:text="Sign up with"
+                android:textAllCaps="true"
+                android:background="@drawable/login_btn_bg"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#ef435b"
+                android:clickable="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp" />
+
 
             <TextView
                 android:id="@+id/signUptext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/loginBtn"
+                android:layout_below="@+id/googleSinInBtn"
                 android:text="Don't have an Account ?"
                 android:textSize="15dp"
                 android:layout_alignParentLeft= "true"
                 android:layout_marginLeft="80dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="40dp"
                 android:textColor="@color/white"
                 android:fontFamily="sans-serif-medium"/>
 
@@ -141,9 +156,9 @@
                 android:id="@+id/signUplink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/loginBtn"
+                android:layout_below="@+id/googleSinInBtn"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginRight="80dp"
                 android:clickable="true"
                 android:linksClickable="true"

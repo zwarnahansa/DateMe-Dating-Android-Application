@@ -16,8 +16,8 @@
         android:height="120dp"/>
 
     <gradient android:angle="270"
-        android:centerColor="#c4c0b7"
-        android:endColor="#c4c0b7"
-        android:startColor="#c4c0b7"/>
+        android:centerColor="#ebe9e6"
+        android:endColor="#ebe9e6"
+        android:startColor="#ebe9e6"/>
 
 </shape>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Message">
+    tools:context=".Feed">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -90,10 +90,10 @@
                 android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:text="Messages"
-                android:background="@drawable/ash_btn_group"
+                android:background="@drawable/login_btn_bg"
                 android:fontFamily="sans-serif"
                 android:textAllCaps="false"
-                android:textColor="#ef435b"
+                android:textColor="#000000"
                 android:clickable="true"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="20dp"
@@ -105,10 +105,10 @@
                 android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:text="Feed"
-                android:background="@drawable/login_btn_bg"
+                android:background="@drawable/ash_btn_group"
                 android:fontFamily="sans-serif"
                 android:textAllCaps="false"
-                android:textColor="#000000"
+                android:textColor="#ef435b"
                 android:clickable="true"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
@@ -167,7 +167,7 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/msgTextLayout">
 
-            
+
 
         </LinearLayout>
 

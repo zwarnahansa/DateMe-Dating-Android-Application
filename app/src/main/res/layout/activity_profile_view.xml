@@ -7,6 +7,7 @@
     tools:context=".ProfileView">
 
     <RelativeLayout
+        android:id="@+id/relativeLayoutNavBtn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/nav_panel">
@@ -21,7 +22,7 @@
                 android:id="@+id/profileBtn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="70dp"
                 android:clickable="true"
                 android:background="@drawable/circle_btn_gray"/>
 
@@ -37,7 +38,7 @@
                 android:id="@+id/mainBtn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="70dp"
                 android:clickable="true"
                 android:background="@drawable/circle_btn_gray"/>
 
@@ -55,7 +56,7 @@
                 android:id="@+id/msgBtn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="70dp"
                 android:clickable="true"
                 android:background="@drawable/circle_btn_gray"/>
 
@@ -71,6 +72,117 @@
 
 
         </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profileImgRelativeLayout"
+        android:layout_below="@id/relativeLayoutNavBtn"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/profImgLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/profileImg"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="135dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/male_business" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userDetailsLayout"
+            android:layout_below="@id/profImgLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="10dp"
+                android:text="Rusiru Ashan, 22"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userBioLayout"
+            android:layout_below="@id/userDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/userBio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Bio goes here"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mediaBtnGroup"
+            android:layout_below="@id/userBioLayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="110dp">
+
+            <Button
+                android:id="@+id/settingBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/circle_btn_gray" />
+
+            <Button
+                android:id="@+id/settingBtnIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="-90dp"
+                android:background="@drawable/ic_settings_ash_24dp"/>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/editBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/circle_btn_gray"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/editBtnIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="-120dp"
+                android:background="@drawable/ic_edit_ash_24dp"/>
+
+
+        </LinearLayout>
+
+
+
 
     </RelativeLayout>
 

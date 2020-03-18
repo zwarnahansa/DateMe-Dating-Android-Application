@@ -69,7 +69,6 @@
                 android:clickable="true"
                 android:background="@drawable/ic_chat_rose" />
 
-
         </LinearLayout>
 
     </RelativeLayout>
@@ -116,66 +115,6 @@
 
         </LinearLayout>
 
-
-        <LinearLayout
-            android:id="@+id/newMatcheText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/linkBtngroup">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/linkBtngroup"
-                android:fontFamily="sans-serif-medium"
-                android:textSize="18dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="45dp"
-                android:textColor="#ef435b"
-                android:text="New Matches"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/newMatchesAccountsLayout"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_below="@+id/newMatcheText">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/msgTextLayout"
-            android:layout_below="@id/newMatchesAccountsLayout"
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/msgTextLayout"
-                android:fontFamily="sans-serif-medium"
-                android:textSize="18dp"
-                android:layout_marginLeft="45dp"
-                android:textColor="#ef435b"
-                android:text="Messages"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/msgViewLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/msgTextLayout">
-
-
-
-        </LinearLayout>
-
-
-
-
     </RelativeLayout>
-
-
 
 </RelativeLayout>

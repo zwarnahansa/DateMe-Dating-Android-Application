@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+    <RelativeLayout
+        android:id="@+id/editProfileTextRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/nav_panel">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="45dp"
+            android:background="@drawable/ic_arrow_back_rose_24dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="80dp"
+            android:text="Edit Profile"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewLayout"
+        android:layout_below="@id/editProfileTextRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/imgRow01LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/img01Btn"
+                    android:layout_width="120dp"
+                    android:layout_height="170dp"
+                    android:text="Click to add Image"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:clickable="true"
+                    android:background="@drawable/input_field_shape"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+                <Button
+                    android:id="@+id/img02Btn"
+                    android:layout_width="120dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Click to add Image"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:clickable="true"
+                    android:background="@drawable/input_field_shape"
+                    android:layout_height="170dp"/>
+                <Button
+                    android:id="@+id/img03Btn"
+                    android:layout_width="120dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Click to add Image"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:clickable="true"
+                    android:background="@drawable/input_field_shape"
+                    android:layout_height="170dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imgRow02LinearLayout"
+                android:layout_below="@id/imgRow01LinearLayout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/img04Btn"
+                    android:layout_width="120dp"
+                    android:layout_height="170dp"
+                    android:text="Click to add Image"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:clickable="true"
+                    android:background="@drawable/input_field_shape"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+                <Button
+                    android:id="@+id/img05Btn"
+                    android:layout_width="120dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Click to add Image"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:clickable="true"
+                    android:background="@drawable/input_field_shape"
+                    android:layout_height="170dp"/>
+                <Button
+                    android:id="@+id/img06Btn"
+                    android:layout_width="120dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Click to add Image"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:clickable="true"
+                    android:background="@drawable/input_field_shape"
+                    android:layout_height="170dp"/>
+
+            </LinearLayout>
+
+<!--            About me -->
+            <LinearLayout
+                android:id="@+id/LinearLayoutAbout"
+                android:layout_below="@id/imgRow02LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="About Name"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#000"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutAboutInput"
+                android:layout_below="@id/LinearLayoutAbout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="50dp"
+                    android:inputType="text"
+                    android:background="@drawable/rectangle_input_text"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Student"
+                    android:textColorHint="#7e8281"/>
+
+            </LinearLayout>
+
+<!--            Job Title-->
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutJobTile"
+                android:layout_below="@id/linearLayoutAboutInput"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Job Title"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#000"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutJobTiletInput"
+                android:layout_below="@id/LinearLayoutJobTile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/jobTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="50dp"
+                    android:inputType="text"
+                    android:background="@drawable/rectangle_input_text"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Add Job Title"
+                    android:textColorHint="#7e8281"/>
+
+            </LinearLayout>
+
+<!--            School-->
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutSchool"
+                android:layout_below="@id/linearLayoutJobTiletInput"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="School"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#000"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSchoolInput"
+                android:layout_below="@id/LinearLayoutSchool"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/school"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="50dp"
+                    android:inputType="text"
+                    android:background="@drawable/rectangle_input_text"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Liverpool University"
+                    android:textColorHint="#7e8281"/>
+
+            </LinearLayout>
+
+<!--            Living-->
+            <LinearLayout
+                android:id="@+id/LinearLayoutLining"
+                android:layout_below="@id/linearLayoutSchoolInput"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Living In"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#000"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLivingInput"
+                android:layout_below="@id/LinearLayoutLining"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/school"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="50dp"
+                android:inputType="text"
+                android:background="@drawable/rectangle_input_text"
+                android:fontFamily="sans-serif-light"
+                android:hint="United kingdom"
+                android:textColorHint="#7e8281"/>
+            </LinearLayout>
+
+<!--            Gender-->
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutGender"
+                android:layout_below="@id/linearLayoutLivingInput"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Gender"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#000"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutGenderInput"
+                android:layout_below="@id/LinearLayoutGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genderRadioGroup"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rectangle_input_text"
+                    android:orientation="vertical">
+                    <RadioButton android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:checked="true"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <!--Instagram connect-->
+            <LinearLayout
+                android:id="@+id/LinearLayoutInstaConn"
+                android:layout_below="@id/linearLayoutGenderInput"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Show ny Instagram Photos"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#000"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutInstaConnInput"
+                android:layout_below="@id/LinearLayoutInstaConn"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/school"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="50dp"
+                    android:inputType="text"
+                    android:background="@drawable/rectangle_input_text"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Click to Connect"
+                    android:textColorHint="#7e8281"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -16,6 +16,7 @@ public class ProfileView extends AppCompatActivity {
 
         Button mainButton = (Button) findViewById(R.id.mainBtnIcon);
         Button msgButton = (Button) findViewById(R.id.msgBtnIcon);
+        Button editProfileBtn = (Button) findViewById(R.id.editBtnIcon);
 
         mainButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +31,14 @@ public class ProfileView extends AppCompatActivity {
             public void onClick(View v) {
                 Intent msgIntent = new Intent(ProfileView.this, Message.class);
                 startActivity(msgIntent);
+            }
+        });
+
+        editProfileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent editProfileIntent = new Intent(ProfileView.this, EditProfile.class);
+                startActivity(editProfileIntent);
             }
         });
     }
